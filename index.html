@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supra Infra Media</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="hero">
+    <div class="hero-overlay"></div>
+    <header class="site-header">
+      <div class="brand">SUPRA INFRA</div>
+      <nav class="nav-links">
+        <a href="#music">Music</a>
+        <a href="#movie">Movie</a>
+        <a href="#tv">TV</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="hero-content">
+      <p class="eyebrow">Media innovation since day one</p>
+      <h1>Bold stories. Loud sound. Iconic motion.</h1>
+      <p class="hero-copy">A media company built for music, film and television with a fearless visual identity and high contrast energy.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#music">Explore Music</a>
+        <a class="button button-secondary" href="#movie">Discover Film</a>
+      </div>
+    </main>
+  </div>
+
+  <section id="music" class="section section-alt">
+    <div class="section-grid">
+      <div>
+        <span class="section-label">Music</span>
+        <h2>Powerful beats, vivid soundscapes</h2>
+        <p>From underground releases to global chart-toppers, we create audio experiences that move crowds and command attention.</p>
+        <a class="button button-black" href="#contact">Work with us</a>
+      </div>
+      <div class="section-art music-art">
+        <div class="shape shape-large"></div>
+        <div class="shape shape-small"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="movie" class="section">
+    <div class="section-grid reverse">
+      <div class="section-art movie-art">
+        <div class="shape shape-hero"></div>
+        <div class="shape shape-bar"></div>
+      </div>
+      <div>
+        <span class="section-label">Movie</span>
+        <h2>Cinematic vision with fearless contrast</h2>
+        <p>We produce films and campaigns with dramatic design, striking visuals, and unforgettable storytelling.</p>
+        <a class="button button-black" href="#contact">See our work</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="tv" class="section section-alt">
+    <div class="section-grid">
+      <div>
+        <span class="section-label">TV</span>
+        <h2>Series and formats engineered for impact</h2>
+        <p>From premium dramas to cultural phenomena, we build television content that cuts through the noise and stays top of mind.</p>
+        <a class="button button-black" href="#contact">Partner with us</a>
+      </div>
+      <div class="section-art tv-art">
+        <div class="shape shape-square"></div>
+        <div class="shape shape-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" class="footer">
+    <div>
+      <p class="footer-title">Let’s build the next iconic release.</p>
+      <p class="footer-copy">supraintro@media.com</p>
+    </div>
+    <div class="footer-links">
+      <a href="#music">Music</a>
+      <a href="#movie">Movie</a>
+      <a href="#tv">TV</a>
+    </div>
+  </footer>
+  <script>
+    const bgSpeed = 0.35;
+    const updateBg = () => {
+      const y = window.scrollY * bgSpeed;
+      document.body.style.backgroundPosition = `center center, center ${-y}px`;
+    };
+    window.addEventListener('scroll', updateBg, { passive: true });
+    updateBg();
+  </script>
+</body>
+</html>
